@@ -31,7 +31,7 @@
 	    url.searchParams.delete("jcfd");
 	    var randomblgurl = Math.floor(Math.random() * blogurls.length);
         randomblgurl = blogurls[randomblgurl];
-	    window.history.replaceState({}, document.title, randomblgurl);
+	    window.location.href = randomblgurl;
   	}
 
   	const stcd = sessionStorage.getItem("jcfd");
